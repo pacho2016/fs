@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поддержать проект | FSOCIETY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">F</span>
+          <span class="brand-text">FSOCIETY</span>
+        </div>
+
+        <nav class="nav-menu" aria-label="Главное меню">
+          <a href="index.html#services">Инициативы</a>
+          <a href="index.html#about">О проекте</a>
+          <a href="index.html#cases">Результаты</a>
+          <a href="volunteers.html">Команда волонтёров</a>
+          <a href="index.html#contact">Контакты</a>
+        </nav>
+
+        <a class="nav-button" href="index.html">На главную</a>
+      </div>
+    </header>
+
+    <main class="page-shell support-page">
+      <section class="container inner-page">
+        <p class="eyebrow">Поддержать проект</p>
+        <h1>Поможем сделать город <span>лучше вместе</span></h1>
+        <p class="subtext">
+          Ваша поддержка помогает запускать новые инициативы, улучшать общественные пространства,
+          организовывать волонтёрские акции и развивать комфортную среду для всех жителей.
+        </p>
+
+        <div class="support-grid">
+          <div class="info-card">
+            <h3>Как можно помочь</h3>
+            <p>Поддержать финансово, участвовать в волонтёрских акциях, помогать в реализации инициатив.</p>
+          </div>
+          <div class="info-card">
+            <h3>Что получаете</h3>
+            <p>Участие в реальных изменениях города, развитии сообществ и улучшении городской среды.</p>
+          </div>
+          <div class="info-card">
+            <h3>Контакты</h3>
+            <p><a href="mailto:SEMSEPIOLL1@gmail.com">SEMSEPIOLL1@gmail.com
+          
+            </a></p>
+          </div>
+        </div>
+
+        <section class="donation-panel" aria-labelledby="donation-title">
+          <div class="donation-copy">
+            <p class="donation-kicker">Разовый перевод</p>
+            <h2 id="donation-title">Поддержать сейчас</h2>
+            <p>Выберите сумму. Для поддержки нуждающимся.</p>
+          </div>
+
+          <form class="donation-form" id="donation-form" data-payment-url-template="">
+            <fieldset class="donation-amounts">
+              <legend>Сумма пожертвования</legend>
+              <div class="amount-options">
+                <button class="amount-option" type="button" data-amount="300" aria-pressed="false">300 ₽</button>
+                <button class="amount-option is-selected" type="button" data-amount="500" aria-pressed="true">500 ₽</button>
+                <button class="amount-option" type="button" data-amount="1000" aria-pressed="false">1 000 ₽</button>
+              </div>
+            </fieldset>
+
+            <label class="custom-amount-label" for="donation-amount">Или введите свою сумму</label>
+            <div class="amount-input-wrap">
+              <input id="donation-amount" name="amount" type="number" min="10" max="100000" step="1" value="500" inputmode="numeric" required />
+              <span aria-hidden="true">₽</span>
+            </div>
+            <button class="btn btn-primary donation-submit" type="submit">Пожертвовать через СБП</button>
+            <p class="donation-status" id="donation-status" role="status" aria-live="polite"></p>
+            <p class="donation-note">Минимум 10 ₽. Разовый платеж, без подписки.</p>
+          </form>
+        </section>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+
+       

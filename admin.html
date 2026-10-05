@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Заявки | FSOCIETY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="FSOCIETY, на главную">
+          <span class="brand-mark">F</span>
+          <span class="brand-text">FSOCIETY</span>
+        </a>
+        <a class="nav-button" href="contacts.html">К контактам</a>
+      </div>
+    </header>
+
+    <main class="admin-page">
+      <div class="admin-container">
+        <div class="admin-heading">
+          <div>
+            <p class="eyebrow">Закрытый раздел</p>
+            <h1>Заявки</h1>
+          </div>
+          <a href="contacts.html">Открыть форму</a>
+        </div>
+
+        <form class="admin-login" id="admin-login-form">
+          <h2>Вход администратора</h2>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="username" required />
+          </label>
+          <label>
+            Пароль
+            <input type="password" name="password" autocomplete="current-password" required />
+          </label>
+          <button type="submit">Войти</button>
+          <p class="admin-status" id="login-status" role="status" aria-live="polite">Войдите с учётной записью администратора.</p>
+        </form>
+
+        <section id="admin-content" hidden>
+          <div class="admin-toolbar">
+            <h2>Полученные заявки</h2>
+            <div class="admin-toolbar-actions">
+              <button id="refresh-submissions" type="button" title="Обновить список">Обновить</button>
+              <button id="admin-logout" type="button">Выйти</button>
+            </div>
+          </div>
+          <p class="admin-status" id="submissions-status" role="status" aria-live="polite"></p>
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th scope="col">Дата</th>
+                  <th scope="col">Имя</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Телефон</th>
+                  <th scope="col">Сообщение</th>
+                </tr>
+              </thead>
+              <tbody id="submissions-list"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="assets/js/admin.js"></script>
+  </body>
+</html>

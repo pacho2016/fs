@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты | FSOCIETY</title>
+    <meta
+      name="description"
+      content="Свяжитесь с командой FSOCIETY и поддержите городские инициативы."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="FSOCIETY, на главную">
+          <span class="brand-mark">F</span>
+          <span class="brand-text">FSOCIETY</span>
+        </a>
+
+        <nav class="nav-menu" aria-label="Главное меню">
+          <a href="index.html#services">Инициативы</a>
+          <a href="index.html#about">О проекте</a>
+          <a href="index.html#cases">Результаты</a>
+          <a href="volunteers.html">Команда волонтёров</a>
+          <a href="contacts.html" aria-current="page">Контакты</a>
+        </nav>
+
+        <a class="nav-button" href="index.html">На главную</a>
+      </div>
+    </header>
+
+    <main class="contact-page">
+      <section class="container contact-hero">
+        <div class="contact-intro">
+          <p class="eyebrow">Поддержать проект</p>
+          <h1>Давайте менять город <span>вместе</span></h1>
+          <p class="subtext">
+            Напишите нам, чтобы поддержать инициативу, присоединиться к команде или предложить идею для нового проекта.
+          </p>
+        </div>
+
+        <div class="contact-panel">
+          <div class="contact-panel-heading">
+            <p>Мы на связи</p>
+          </div>
+
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:SEMSEPIOLL1@gmail.com">
+              <span class="contact-icon">@</span>
+              <span>
+                <small>Email</small>
+                <strong>SEMSEPIOLL1@gmail.com</strong>
+              </span>
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="contact-item" href="https://t.me/semsepi">
+              <span class="contact-icon">✈</span>
+              <span>
+                <small>Telegram</small>
+                <strong>@semsepi</strong>
+              </span>
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+          <form class="personal-form" id="contact-submission-form">
+            <h2>Оставьте свои данные</h2>
+            <label>
+              Имя
+              <input type="text" name="Имя" autocomplete="name" placeholder="Как к вам обращаться" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="Email" autocomplete="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Телефон <span>(необязательно)</span>
+              <input type="tel" name="Телефон" autocomplete="tel" placeholder="+7 (___) ___-__-__" />
+            </label>
+            <label>
+              Сообщение <span>(необязательно)</span>
+              <textarea name="Сообщение" rows="4" placeholder="Расскажите, чем хотите помочь"></textarea>
+            </label>
+            <label class="consent-label">
+              <input type="checkbox" name="Согласие" required />
+              <span>Согласен на обработку персональных данных</span>
+            </label>
+            <button class="btn btn-primary" type="submit">Отправить данные</button>
+            <p class="form-status" id="contact-submission-status" role="status" aria-live="polite">Отправка заявок пока не подключена.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/contact-submissions.js"></script>
+  </body>
+</html>
